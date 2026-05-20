@@ -25,6 +25,7 @@ int main()
     printf("%15f\n", f);
     printf("%20f\n", f);
     printf("%-+20f\n", f);
+    printf("%-20f\n", f);
    
 
     return 0;
