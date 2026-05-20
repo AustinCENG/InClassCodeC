@@ -8,8 +8,9 @@ int main(void)
 {
      int a, b, c;
      a = b = c =5;
+
      printf("Test a, b, c: %d, %d, \n %d \n", a, b, c);
-     
+
      float miles,  /* distance in miles                 */
             kms;    /* equivalent distance in kilometers */
 
