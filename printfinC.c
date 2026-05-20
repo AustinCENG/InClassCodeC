@@ -15,11 +15,14 @@ int main()
     int k= 123;
     double f=3.1415926;
     printf("%d\n", k);
+    printf("%-d\n", k);
+    printf("%+d\n", k);
     printf("%6d\n", k);
     printf("%-6d\n", k);
     printf("%+6d\n\n", k);
-    printf("The following is for print double:\n");
     
+    printf("The following is for print double:\n");
+    printf("%6.1f\n", f);
     printf("%+6.1f\n", f);
     printf("%-6.1f\n", f);
     printf("%15f\n", f);
