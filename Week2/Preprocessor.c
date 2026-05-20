@@ -6,7 +6,6 @@
 #define PI 3.1415926  // Macros allow you to create symbolic constants or inline function-like replacements
 #define AREA(w,l) (w)*(l) // Macros
 #define CICLEAREA(r) PI*(r)*(r) // Macros
-
 //#define DEBUG
 
 int main()
@@ -24,6 +23,7 @@ int main()
     area2 = AREA(3+1,4+1);    //  equivalent to area2 = (3+1)*(4+1);
     printf("Case 2: area1 is %f\n", area1);  // expect 9*PI ~28
     printf("Case 2: area2 is %f\n", area2);  // expect 20
+
 
 
 
