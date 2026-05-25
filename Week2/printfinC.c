@@ -14,23 +14,22 @@ int main()
 {
     int k= 123;
     double f=3.1415926;
-    printf("%d\n", k);
-    printf("%-d\n", k);
-    printf("%+d\n", k);
-    printf("%6d\n", k);
-    printf("%-6d\n", k);
-    printf("%+6d\n\n", k);
+    printf("1. %dend\n", k);  // right alignment by default. No size is specified.
+    printf("2. %-dend\n", k);
+    printf("3. %+dend\n", k);
+    printf("4. %6dend\n", k);
+    printf("5. %-6dend\n", k);
+    printf("6. %+6dend\n\n", k);
     
     printf("The following is for print double:\n");
-    printf("%6.1f\n", f);
-    printf("%+6.1f\n", f);
-    printf("%-6.1f\n", f);
-    printf("%15f\n", f);
-    printf("%20f\n", f);
-    printf("%-20f\n", f);
-    printf("%-+20f\n", f);
-    
-   
+    printf("7. %6.1fend\n", f);
+    printf("8. %+6.1fend\n", f);
+    printf("9. %-6.1fend\n", f);
+    printf("10. %15fend\n", f);
+    printf("11. %20fend\n", f);
+    printf("12. %-20fend\n", f);
+    printf("13. %-+20fend\n", f);
+ 
 
     return 0;
 }

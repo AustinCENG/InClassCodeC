@@ -9,15 +9,13 @@ int main()
     float e = a/b;  // what woudl be e? should be 2.0
     e = 5/2; // what woudl be e? should be 2.0
     printf("The result of 5/2 is: %d, and 5%%2 is : %d\n", a/b, a%b);
-    printf("The result of a/b is: %f", c);
-
-  
+    printf("The result of a/b is: %f\n\n", c);
   
     int i = 2;
     int k = 30;
     int u = 100;
-    u = u - -k*i;
-    printf("%d %d %d\n", i, k, u);
+    u = u - -k*i;  // same as u = u - (-k)*i;
+    printf("The results of i, k, u are: %d %d %d\n", i, k, u);
 
     return 0;
 }

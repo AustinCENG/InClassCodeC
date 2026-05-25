@@ -2,15 +2,10 @@
 /* Converts distances from miles to kilometers.        */
 
 #include <stdio.h> /* printf, scanf definitions        */
-#define KMS_PER_MILE 1.609 /* conversion constant      */
+#define KMS_PER_MILE 1.609f /* conversion constant      */
 
 int main(void)
 {
-     int a, b, c;
-     a = b = c =5;
-
-     printf("Test a, b, c: %d, %d, \n %d \n", a, b, c);
-
      float miles,  /* distance in miles                 */
             kms;    /* equivalent distance in kilometers */
 
