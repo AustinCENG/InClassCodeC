@@ -1,0 +1,14 @@
+if !(((𝑛>0) && (𝑛<100))|| (m >100)). Question: When will this logic output be True?
+
+	  1. Check if (n>0 and n<100)
+		if it is true, then 
+		((𝑛>0) && (𝑛<100))|| (m >100) is true
+		!(((𝑛>0) && (𝑛<100))|| (m >100)) will be false.
+	2. Check if (n>0 and n<100) is false;
+	   then it will check m > 100 or not. 
+	   if m > 100,
+	   then the whole logic ((𝑛>0) && (𝑛<100))|| (m >100) is true
+	   !(((𝑛>0) && (𝑛<100))|| (m >100)) will be false (same as case 1).
+	  
+	   Otherwise if (m<=100), (m > 100) will be false. 
+	   !(((𝑛>0) && (𝑛<100))|| (m >100)) will be true.  -- this will be the only case that could make this if statement true. 	  

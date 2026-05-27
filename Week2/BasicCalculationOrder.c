@@ -16,6 +16,11 @@ int main()
     int u = 100;
     u = u - -k*i;  // same as u = u - (-k)*i;
     printf("The results of i, k, u are: %d %d %d\n", i, k, u);
-
+   
+   
+    char f = 250;   // this is a byte. 
+    char k1 = f + 10;  // 260 is over the size of 1 byte. 
+    printf("The result of %u + 10 is : %d \n", (unsigned int)f, k1);
+    
     return 0;
 }
