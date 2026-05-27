@@ -14,7 +14,7 @@ switch (){
 
 void iffunction() {
 int score = 85; 
-    if (score >= 90) { 
+    if (score >= 90) { // when if else if is used, sort the condition in sequence to avoid the mistakes in assigning the categories. 
         printf("Grade: A\n"); 
     } else if (score >= 80) { 
         printf("Grade: B\n"); 
