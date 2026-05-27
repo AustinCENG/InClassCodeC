@@ -1,13 +1,14 @@
 #include <stdio.h> 
+// Convert from if to switch will be the quiz question on Lab 6. 
+// Similar question. 
 void switchfunction()
 {
-int score = 85; 
+int score = 85;   // how to make it work?
 switch (){
     case :
     case :
     case :
     default:
-    
 }
 }
 
