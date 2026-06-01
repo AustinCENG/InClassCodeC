@@ -28,5 +28,6 @@ int score = 85;
 
 int main() { // how to change it to switch statements?
     iffunction();  // test if. 
+    switchfunction();
     return 0; 
 } 

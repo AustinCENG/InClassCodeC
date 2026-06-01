@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 int main() {
     int day = 4;
+    char k = 250;
     switch (day) {
         case 1:
             printf("Monday\n");
@@ -13,6 +16,7 @@ int main() {
             break;
        case 4:  // order of the case doesn't matter. 
             printf("Thursday\n"); // This will execute
+            printf("k is %d", atoi (&k));
             break; // The code will exit the switch block at the first "break" it meets.
         case 5:
             printf("Friday\n");
