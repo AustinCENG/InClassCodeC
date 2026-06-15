@@ -19,8 +19,8 @@ void printAllElements(double input[], int NumberofElements)
 }
 
 // print out the first NumberofElements of the array input
-// same as above, but use a pointer. 
-void printAllElementswithPtr(double *inputPtr, int NumberofElements)
+// same as above, but use a pointer. preferred way to do the Array passing as a parameter. 
+void printAllElementswithPtr(const double *inputPtr, int NumberofElements)
 {
    for (int i = 0; i< NumberofElements; i++){
        // How to access the data with inputPtr?  *(inputPtr+i) is the same as x[i]
@@ -82,9 +82,9 @@ int main (void)
     // printAllElements(x, DataCount);
 
     // print out the original array using pointers. 
-    printAllElementswithPtr(x, DataCount);
-
-    flcose(fptr);  // make sure the file is closed before return. 
+    printAllElementswithPtr(x, DataCount);  // x is the array's name, it is also a pointer.
+    
+    fclose(fptr);  // make sure the file is closed before return. 
     return (0);
 }
 
