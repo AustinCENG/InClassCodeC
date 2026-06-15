@@ -9,6 +9,28 @@
 
 #define MAX_ITEM 1000  /* maximum number of items in list of data       */
 
+// print out the first NumberofElements of the array input
+void printAllElements(double input[], int NumberofElements)
+{
+   for (int i = 0; i< NumberofElements; i++)
+   {
+       printf (" The %d element in the array is: %lf\n", i, input[i]);
+   }
+}
+
+// print out the first NumberofElements of the array input
+// same as above, but use a pointer. 
+void printAllElementswithPtr(double *inputPtr, int NumberofElements)
+{
+   for (int i = 0; i< NumberofElements; i++){
+       // How to access the data with inputPtr?  *(inputPtr+i) is the same as x[i]
+       printf (" The %d element in the array is: %lf (using ptr)\n", i, *(inputPtr+i));
+       // The following is the same as the above, but not preferred. 
+       // printf (" The %d element in the array is: %lf (using ptr)\n", i, inputPtr[i]);
+   }
+}
+
+// file operations, array operations and passing pointers as parameters. 
 int main (void)
 {
       double x[MAX_ITEM] ={0},   /* data list                              */
@@ -56,6 +78,13 @@ int main (void)
     for  (i = 0; i < DataCount;  ++i)
         printf ("%3d%4c%9.2f%5c%9.2f\n", i, ' ', x[i], ' ', x[i] - mean);
 
+    // print out the original array. 
+    // printAllElements(x, DataCount);
+
+    // print out the original array using pointers. 
+    printAllElementswithPtr(x, DataCount);
+
+    flcose(fptr);  // make sure the file is closed before return. 
     return (0);
 }
 
