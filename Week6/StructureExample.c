@@ -9,7 +9,7 @@ struct Gamer {
 };
 
 // No marks for this kind of declaration in your exam. 
-// should NOT pass structure name as a prameter, instead, use a pointer. 
+// should NOT pass structure itself as a prameter, instead, use a pointer. 
 void WrongWay(struct Gamer playerPtr) 
 {
 
@@ -17,7 +17,6 @@ void WrongWay(struct Gamer playerPtr)
 
 
 // 2. Function prototype that accepts a pointer to the structure
-
 // Function to modify structure fields using the arrow (->) operator
 void levelUp(struct Gamer *playerPtr) {
     if (playerPtr != NULL) {
