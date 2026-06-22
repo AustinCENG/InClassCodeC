@@ -14,7 +14,8 @@ int
 main(void)
 {
       char line[LINE_LEN+1], inname[NAME_LEN+1], outname[NAME_LEN+1];
-      FILE *inp, *outp;
+      FILE *inp, *outp;    // Have to be a pointer to open a file. 
+      
       char *status;
       int i = 0;
  
@@ -26,6 +27,7 @@ main(void)
       inp = fopen(inname, "r");
       outp = fopen(outname, "w");
  
+      // make sure files are open before your operation. 
       if (inp == NULL || outp == NULL){ 
         printf("The files cannot be open, quit the program\n");
         return -1;
@@ -34,12 +36,18 @@ main(void)
       while (1){
         status = fgets(line, LINE_LEN, inp);
         if (status == 0)
-           break;
+           break;  // break the while(1) loop. 
+
         if (line[strlen(line) - 1] == '\n'){
                line[strlen(line) - 1] = '\0';
         }
          fprintf(outp, "%3d>> %s\n\n", ++i, line);
+         printf("%3d>> %s\n\n", i, line);
       }
+
+      // have to close the file after the file operations. 
+      fclose(inp);
+      fclose(outp);
       
      return (0);
 }

@@ -12,3 +12,35 @@
 
   7>> modularity of a powerful high-level programming language.
 
+  8>> Now repeat:
+
+  9>> In the early 1960s, designers and implementers of operating
+
+ 10>> systems were faced with a significant dilemma. As people's
+
+ 11>> expectations of modern operating systems escalated, so did
+
+ 12>> the complexity of the systems themselves. Like other
+
+ 13>> programmers solving difficult problems, the systems
+
+ 14>> programmers desperately needed the readability and
+
+ 15>> modularity of a powerful high-level programming language.
+
+ 16>> Now Repeat again:
+
+ 17>> In the early 1960s, designers and implementers of operating
+
+ 18>> systems were faced with a significant dilemma. As people's
+
+ 19>> expectations of modern operating systems escalated, so did
+
+ 20>> the complexity of the systems themselves. Like other
+
+ 21>> programmers solving difficult problems, the systems
+
+ 22>> programmers desperately needed the readability and
+
+ 23>> modularity of a powerful high-level programming language.
+
