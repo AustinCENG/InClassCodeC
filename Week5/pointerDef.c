@@ -12,4 +12,9 @@ printf("2. m is %d\n", m); /* What will be printed? */
 printf("*itemp is %d\n", *itemp); /* What will be printed? */ 
 printf("itemp %ld\n", itemp); /* What will be printed? */ 
 printf("&m is %ld\n", &m); /* What will be printed? */ 
+
+// Never do the following:
+// 1. itemp = 30;
+// 2. *m --- Never use this. m is not a pointer. 
+// 3. &itemp  --- This should be avoid. as this is the address of the pointer. 
 }
