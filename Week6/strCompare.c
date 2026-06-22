@@ -7,11 +7,14 @@
 #include <stdio.h>
 #include <string.h>
 
+// use a pointer to declare and initialize the strings. 
+char *constString = "Toronto, Brampton, Mississauga, Oakville and Markham are all cities in Ontario";
 
 int main(void)
 {
     char str1[50] = "College";
     char str2[50] = "College";
+    char emptystr[100] = {0};   // initialize the string as an empty string with all 0 as the value. 
     // Method 1: Compare with Names of the strings - Wrong operations. 
     // str1 and str2 are the names of the arrays. 
     // And the names of the arrays are pointers. 
